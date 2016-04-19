@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,600);
+.custom-color {
+  color: #e2534f;
+}
+h1, h2, h3, h4 {font-family: 'Ek Mukta', sans-serif;}
+.ek-mukta {
+	font-family: 'Ek Mukta', sans-serif;
+}
+p {
+	font-family: 'Crimson Text', serif;
+}
+body#tinymce.wp-editor { 
+    font-family: 'Crimson Text', serif;
+
+}
