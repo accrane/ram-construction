@@ -70,12 +70,7 @@ function js_custom_init()
   
   ); 
   register_post_type('team',$args); // name used in query
-  
-  // Add more between here
-  
-  // and here
-  
-  } // close custom post type
+
 
 $labels = array(
   'name' => _x('Testimonials', 'post type general name'),
