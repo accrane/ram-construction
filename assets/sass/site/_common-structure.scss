@@ -46,7 +46,7 @@ body {
 	margin: 0px auto;
 	
 	@media screen and (min-width: $tabwidth) {
-		width: 66%;
+		width: 70%;
 		float: left;
 		margin: 0;
 	}
@@ -87,7 +87,7 @@ body {
 	margin: 0px auto;
 	
 	@media screen and (min-width: $tabwidth) {
-		width: 26%;
+		width: 30%;
 		float: right;
 		margin: 0;
 	}
@@ -218,7 +218,7 @@ section.header-right {
 	color: #fff;
 	overflow: hidden;
 	margin: 20px 0 0 0;
-	padding: 0 0 30px 0;
+	padding: 30px 0 30px 0;
 	font: {
 		family: $font__main;
 		size: 14px;
@@ -227,6 +227,7 @@ section.header-right {
 		width: auto;
 		display: inline-block;
 		border-bottom: 1px solid $color-green;
+		margin: 0;
 	}
 	.footer-left {
 		width: auto; 
@@ -245,4 +246,7 @@ section.header-right {
 	background-color: #fff;
 	overflow: hidden;
 	border-top: 5px solid $color-green;
+	@media screen and (min-width: $deskwidth) {
+		min-height: 550px;
+	}
 }

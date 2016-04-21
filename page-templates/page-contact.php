@@ -3,7 +3,11 @@
  * Template Name: Contact
  */
 
-get_header(); ?>
+get_header(); 
+
+$content =get_field('content');
+
+?>
 <div class="wrapper">
 	<div class="page-container">
 
@@ -16,7 +20,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+						<?php echo $content; ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #post-## -->

@@ -83,7 +83,7 @@ get_header(); ?>
 		<div class="facebook-feed">
 			<h2><?php echo $facebook_feed; ?></h2>
 			<div class="feed-wrap">
-				feed
+				<?php echo do_shortcode('[custom-facebook-feed]'); ?>
 			</div>
 		</div>
 

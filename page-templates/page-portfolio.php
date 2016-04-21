@@ -34,7 +34,7 @@ if ($wp_query->have_posts()) : ?>
 $i++;
 
 $image = get_field('featured_photo');
-$size = 'medium'; 
+$size = 'large'; 
 
 if( $i == 3 ) {
 	$class = 'last';

@@ -60,14 +60,18 @@
 		float: right;
 		margin: 0 0 40px;
 	}
-
+	p {
+		margin: 0 0 10px 0;
+	}
 	h2 {
+		border-bottom: 2px solid $color-black;
+		margin: 0 0 0px 0;
 		font: {
 			font-family: $font__heading;
 			size: 20px;
 			weight: 700;
 		}
-		border-bottom: 2px solid $color-black;
+		
 	}
 	.hfb-a a {
 		width: 100%;
@@ -132,6 +136,13 @@
 	margin: 0 0 30px 0;
 	background-color: #fff;
 
+	h2 {
+		margin: 0 0 20px 0;
+	}
+	p {
+		margin: 0 0 10px 0;
+	}
+
 	@media screen and (min-width: $tabwidth) {
 		width: 70%;
 		float: right;
@@ -161,6 +172,7 @@
 
 	h3 {
 		color: $color-green;
+		margin: 0 0 5px 0;
 		font: {
 			family: $font__heading;
 			size: 16px;
@@ -193,12 +205,14 @@
 		padding: 5px 0;
 		background-color: $color-green;
 		color: #fff;
-		border-bottom: 2px solid #000;
+		border-bottom: 4px solid #000;
 		text-align: center;
+		margin: 0;
 	}
 
 	.feed-wrap {
 		padding: 20px;
+		background-color: #fff;
 	}
 }
 .sponsors-box {
