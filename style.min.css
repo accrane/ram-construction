@@ -1420,6 +1420,7 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .social-links li i a{width:30px;height:30px;position:absolute;top:0;left:0;display:block;text-indent:-9000px}
 .social-links a{color:#fff}
 .site-footer{width:100%;clear:both}
+.page-container{width:100%;padding:20px;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1461,6 +1462,18 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 }.sponsors-box .sponsors{width:20%;float:left}
 .sponsors-box .sponsors img{width:100%}
 .sponsors-box .sponsors a{display:block}
+.portfolio-item.first{margin:0 0 20px 0}
+@media screen and (min-width:600px){.portfolio-item.first{margin:0 3% 30px 0}
+}.portfolio-item.last{margin:0 0 20px 0}
+@media screen and (min-width:600px){.portfolio-item.last{margin:0 0 30px 0}
+}.portfolio-item{width:100%}
+.portfolio-item img{width:100%}
+@media screen and (min-width:600px){.portfolio-item{width:31%;float:left}
+}.portfolio-item a{display:block;overflow:hidden}
+.portfolio-item a:hover i{margin:10px 0 0 0}
+.portfolio-item .title{color:#93b832}
+.portfolio-item .title h2{width:auto;float:left;display:inline-block;text-align:left;margin:5px 0 0 0}
+.portfolio-item .title i{width:auto;float:right;margin:10px 10px 0 0;-webkit-transition:.3s ease all;transition:.3s ease all}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
