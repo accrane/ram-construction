@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Portfolio
+ * Template Name: Properties
  */
 
 get_header(); ?>
@@ -12,7 +12,6 @@ get_header(); ?>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
-			
 <?php
 $i=0;
 $wp_query = new WP_Query();
@@ -24,7 +23,7 @@ $wp_query->query(array(
 		array(
 			'taxonomy' => 'property_type', // your custom taxonomy
 			'field' => 'slug',
-			'terms' => array( 'portfolio' ) // the terms (categories) you created
+			'terms' => array( 'property' ) // the terms (categories) you created
 		)
 	)
 ));

@@ -18,14 +18,7 @@ jQuery(document).ready(function ($) {
         }
 	});
 	
-	/*
-	*
-	*	Flexslider
-	*
-	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
+	
 	
 	/*
 	*
@@ -70,9 +63,9 @@ jQuery(document).ready(function ($) {
 	*	Nice Page Scroll
 	*
 	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
+		
+		// $("html").niceScroll();
+	
 	
 	
 	/*
@@ -82,6 +75,15 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.js-blocks').matchHeight();
 
+
+	/*
+	*
+	*	Flexslider
+	*
+	------------------------------------*/
+	$('.flexslider').flexslider({
+		animation: "slide",
+	}); // end register flexslider
 	/*
 	*
 	*	Wow Animation

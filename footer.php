@@ -9,6 +9,12 @@
  * @package ACStarter
  */
 
+
+$sitemapLink = get_field('sitemap_link', 'option'); 
+$phone = get_field('phone', 'option'); 
+$fax = get_field('sitemap_link', 'option'); 
+$email = get_field('contact_email', 'option'); 
+
 ?>
 
 	</div><!-- #content -->
@@ -16,12 +22,31 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acstarter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'acstarter' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'acstarter' ), 'acstarter', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+
+				<div class="footer-left">
+				<h3><?php echo get_bloginfo('name') . ' | Charlotte, NC'; ?></h3>
+					<br>
+					<?php echo get_bloginfo('description'); ?>
+					<br>
+					<?php echo '<a href="' . $sitemapLink . '">sitemap</a> | site by <a target="_blank" href="http://bellaworksweb.com">bellaworks</a>'; ?>
+				</div>
+
+
+				<div class="footer-right">
+
+					<?php echo $phone; ?>
+					<br>
+					<a href="mailto:<?php echo antispambot($email); ?>">
+					  <?php echo antispambot($email); ?>
+					</a>
+
+				</div><!-- footer left -->
+
+
 			</div><!-- .site-info -->
-	</div><!-- wrapper -->
+		</div><!-- wrapper -->
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

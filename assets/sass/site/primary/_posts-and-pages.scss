@@ -276,3 +276,17 @@
 		}
 	} // title
 } // portfolio item
+section.black-quote {
+	width: 100%;
+	padding: 20px;
+	background-color: #000;
+	color: #fff;
+	overflow: hidden;
+	margin: 20px 0 0 0;
+
+	.quote {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
