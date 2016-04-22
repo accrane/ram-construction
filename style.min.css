@@ -1402,7 +1402,7 @@ body{background-image:url(images/bg.png);background-size:contain;background-repe
 @media screen and (min-width:600px){.map{width:40%;float:right;margin:0}
 }@media screen and (min-width:1200px){}
 .widget-area{width:100%;margin:0 auto}
-@media screen and (min-width:600px){.widget-area{width:30%;float:right;margin:0}
+@media screen and (min-width:600px){.widget-area{width:30%;float:right;margin:85px 0 0 0}
 }@media screen and (min-width:1200px){}
 .logo,h1.logo{width:100px;height:124px;background-image:url(images/ram-logo.png);margin:10px auto;background-size:cover}
 @media screen and (min-width:600px){.logo,h1.logo{width:100px;height:124px;float:left;margin:20px0 0 0}
@@ -1457,7 +1457,11 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .home-experience h2{margin:0 0 20px 0}
 .home-experience p{margin:0 0 10px 0}
 @media screen and (min-width:600px){.home-experience{width:70%;float:right;margin:0 0 40px}
-}.column-first{margin:0 0 20px 0}
+}.home-experience .bottom-border{width:100%;margin:0;clear:both}
+.home-experience .bottom-border .black,.home-experience .bottom-border .green{width:33.33333%;padding:0;margin:0;height:5px;float:left}
+.home-experience .bottom-border .black{background-color:#000}
+.home-experience .bottom-border .green{background-color:#93b832}
+.column-first{margin:0 0 20px 0}
 @media screen and (min-width:600px){.column-first{margin:0 5% 0 0}
 }.column-last{margin:0 0 20px 0}
 @media screen and (min-width:600px){.column-last{margin:0}
@@ -1472,7 +1476,7 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .facebook-feed .feed-wrap{padding:20px;background-color:#fff}
 .sponsors-box{width:100%;margin:0 0 30px 0;background-color:#000}
 @media screen and (min-width:600px){.sponsors-box{width:50%;float:right}
-}.sponsors-box .sponsors{width:20%;float:left}
+}.sponsors-box .sponsors{width:25%;float:left}
 .sponsors-box .sponsors img{width:100%}
 .sponsors-box .sponsors a{display:block}
 .portfolio-item.first{margin:0 0 20px 0}
@@ -1489,6 +1493,16 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .portfolio-item .title i{width:auto;float:right;margin:10px 10px 0 0;-webkit-transition:.3s ease all;transition:.3s ease all}
 section.black-quote{width:100%;padding:20px;background-color:#000;color:#fff;overflow:hidden;margin:20px 0 0 0}
 section.black-quote .quote{width:60%;margin:0 auto;text-align:center}
+section.single-port-extra{width:100%;padding:20px;background-color:#fff;overflow:hidden;margin:20px 0 0 0}
+.prop-gallery .first{margin:0 0 5px 0}
+@media screen and (min-width:600px){.prop-gallery .first{margin:0 4% 4% 0}
+}.prop-gallery .last{margin:0 0 5px 0}
+@media screen and (min-width:600px){.prop-gallery .last{margin:0 0 4% 0}
+}.gallery-image{width:100%;line-height:0}
+@media screen and (min-width:600px){.gallery-image{width:30%;float:left}
+}.gallery-image a{display:block;margin:0}
+.proj-details-head{color:#93b832;margin:0 0 15px 0;font-family:"Ek Mukta",sans-serif;font-size:18px}
+.proj-details-copy{color:#93b832;margin:0 0 5px 0;font-family:"Crimson Text",serif;font-size:18px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

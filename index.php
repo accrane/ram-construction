@@ -77,6 +77,11 @@ get_header(); ?>
 					<?php echo wp_get_attachment_image( $third_column_image, $size ); ?>
 				</div>
 			</div><!-- box wrap -->
+			<div class="bottom-border">
+				<div class="black"></div>
+				<div class="green"></div>
+				<div class="black"></div>
+			</div><!-- bottom border -->
 		</div><!-- home-first-block -->
 
 
