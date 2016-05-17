@@ -375,3 +375,85 @@ section.single-port-extra {
 		size: 18px;
 	}
 }
+.leaders {
+	width: 100%;
+	float:  left;
+	overflow: hidden;
+	border-bottom: 2px solid #000;
+}
+.team-leader.team-leader-first {
+	margin: 0 0 30px 0;
+
+	@media screen and (min-width: $tabwidth) {
+		margin: 0 5% 30px 0;
+	}
+}
+.team-leader.team-leader-last {
+	margin: 0 0 30px 0;
+	
+	@media screen and (min-width: $tabwidth) {
+		margin: 0 0% 30px 0;
+	}
+}
+.team-leader {
+	width: 100%;
+	float: left;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 30%
+	}
+
+	h2 {
+		text-transform: uppercase;
+		color: $color-green;
+		margin: 0 ;
+		font: {
+			size: 20px;
+			family: $font__heading;
+		}
+	}
+	.pic {
+		width: 100%;
+		margin: 0 0 10px 0;
+
+		img {width: 100%;}
+
+		@media screen and (min-width: $tabwidth) {
+
+		}
+	} // pic
+	.position {
+
+		@media screen and (min-width: $tabwidth) {
+
+		}
+
+	} // position
+	.email {
+		width: 29px;
+		height: 30px;
+
+		a {
+			width: 29px;
+			height: 30px;
+			display: block;
+			text-indent: -9000px;
+			@include transition(.3s ease all);
+			background: {
+				image: url(images/mail.png);
+				repeat: no-repeat;
+				position: top 10px left 0;
+			}
+
+			&:hover {
+				background-position: top 0 left 0;
+			}
+		}
+
+		@media screen and (min-width: $tabwidth) {
+
+		}
+
+	} // email
+
+} // team leader

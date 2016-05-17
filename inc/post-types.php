@@ -120,14 +120,26 @@ function build_taxonomies() {
 // cusotm tax
     register_taxonomy( 'property_type', 'property',
    array( 
-  'hierarchical' => true, // true = acts like categories false = acts like tags
-  'label' => 'Property Type', 
-  'query_var' => true, 
-  'rewrite' => true ,
-  'show_admin_column' => true,
-  'public' => true,
-  'rewrite' => array( 'slug' => 'property-type' ),
-  '_builtin' => true
-  ) );
+      'hierarchical' => true, // true = acts like categories false = acts like tags
+      'label' => 'Property Type', 
+      'query_var' => true, 
+      'rewrite' => true ,
+      'show_admin_column' => true,
+      'public' => true,
+      'rewrite' => array( 'slug' => 'property-type' ),
+      '_builtin' => true
+      ) );
+
+    register_taxonomy( 'team_type', 'team',
+   array( 
+      'hierarchical' => true, // true = acts like categories false = acts like tags
+      'label' => 'Team Member Type', 
+      'query_var' => true, 
+      'rewrite' => true ,
+      'show_admin_column' => true,
+      'public' => true,
+      'rewrite' => array( 'slug' => 'team-type' ),
+      '_builtin' => true
+      ) );
   
 } // End build taxonomies

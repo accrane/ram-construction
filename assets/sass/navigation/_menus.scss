@@ -13,6 +13,7 @@
 	display: block;
 	float: left;
 	width: 100%;
+	@include transition(all ease .3s);
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		float: right;
@@ -69,10 +70,15 @@
 		position: relative;
 		text-transform: uppercase;
 		line-height: 3;
+		width: 100%;
 		font: {
 			family : $font__heading;
 			size: 16px;
 
+		}
+
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
 		}
 
 		&:hover > a,
@@ -103,7 +109,14 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	background-color: $color-green;
+	@include transition(all ease .3s);
+	ul.sub-menu {
+		background-color: rgba(255,255,255,.1);
+	}
+	
 }
+
 
 @media screen and (min-width: $tabwidth) {
 	.menu-toggle {
@@ -111,6 +124,27 @@
 	}
 	.main-navigation ul {
 		display: block;
+	}
+}
+button.menu-toggle {
+	border: 0px;
+	text-shadow: none;
+	background-color: $color-green;
+	color: #fff;
+	box-shadow: none;
+	width: auto;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 0;
+	text-transform: uppercase;
+	font: {
+		
+		weight :300;
+		size: 20px;
+	}
+	
+	@media screen and (min-width: $tabwidth) {
+		display: none;
 	}
 }
 

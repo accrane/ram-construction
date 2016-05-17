@@ -242,11 +242,12 @@ section.header-right {
 }
 .page-container {
 	width: 100%;
-	padding: 20px;
+	padding: 5%;
 	background-color: #fff;
 	overflow: hidden;
 	border-top: 5px solid $color-green;
 	@media screen and (min-width: $deskwidth) {
 		min-height: 550px;
+		padding: 40px;
 	}
 }

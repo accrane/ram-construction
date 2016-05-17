@@ -1274,7 +1274,7 @@ a:hover,a:focus,a:active{color:#93b832}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 @media screen and (min-width:600px){.nav-wrap{margin-top:40px}
-}.main-navigation{clear:both;display:block;float:left;width:100%}
+}.main-navigation{clear:both;display:block;float:left;width:100%;-webkit-transition:all ease .3s;transition:all ease .3s}
 @media screen and (min-width:600px){.main-navigation{width:auto;float:right;clear:none;margin:0 10px 0 0}
 }.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
 .main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
@@ -1282,12 +1282,16 @@ a:hover,a:active{outline:0}
 .main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
 .main-navigation ul ul a{width:200px}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative;text-transform:uppercase;line-height:3;font-family:"Ek Mukta",sans-serif;font-size:16px}
-.main-navigation a{display:block;text-decoration:none;color:#fff;padding:0 10px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.main-navigation li{float:left;position:relative;text-transform:uppercase;line-height:3;width:100%;font-family:"Ek Mukta",sans-serif;font-size:16px}
+@media screen and (min-width:600px){.main-navigation li{width:auto}
+}.main-navigation a{display:block;text-decoration:none;color:#fff;padding:0 10px;-webkit-transition:all ease .3s;transition:all ease .3s}
 .main-navigation a:hover{color:#93b832}
-.menu-toggle,.main-navigation.toggled ul{display:block}
+.menu-toggle,.main-navigation.toggled ul{display:block;background-color:#93b832;-webkit-transition:all ease .3s;transition:all ease .3s}
+.menu-toggle ul.sub-menu,.main-navigation.toggled ul ul.sub-menu{background-color:rgba(255,255,255,0.1)}
 @media screen and (min-width:600px){.menu-toggle{display:none}
 .main-navigation ul{display:block}
+}button.menu-toggle{border:0;text-shadow:none;background-color:#93b832;color:#fff;box-shadow:none;width:auto;display:inline-block;margin:10px auto;border-radius:0;text-transform:uppercase;font-weight:300;font-size:20px}
+@media screen and (min-width:600px){button.menu-toggle{display:none}
 }.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
@@ -1429,8 +1433,8 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .site-footer h3{width:auto;display:inline-block;border-bottom:1px solid #93b832;margin:0}
 .site-footer .footer-left{width:auto;display:inline-block;float:left}
 .site-footer .footer-right{width:auto;display:inline-block;float:right}
-.page-container{width:100%;padding:20px;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
-@media screen and (min-width:1200px){.page-container{min-height:550px}
+.page-container{width:100%;padding:5%;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
+@media screen and (min-width:1200px){.page-container{min-height:550px;padding:40px}
 }.sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1503,6 +1507,19 @@ section.single-port-extra{width:100%;padding:20px;background-color:#fff;overflow
 }.gallery-image a{display:block;margin:0}
 .proj-details-head{color:#93b832;margin:0 0 15px 0;font-family:"Ek Mukta",sans-serif;font-size:18px}
 .proj-details-copy{color:#93b832;margin:0 0 5px 0;font-family:"Crimson Text",serif;font-size:18px}
+.leaders{width:100%;float:left;overflow:hidden;border-bottom:2px solid #000}
+.team-leader.team-leader-first{margin:0 0 30px 0}
+@media screen and (min-width:600px){.team-leader.team-leader-first{margin:0 5% 30px 0}
+}.team-leader.team-leader-last{margin:0 0 30px 0}
+@media screen and (min-width:600px){.team-leader.team-leader-last{margin:0 0 30px 0}
+}.team-leader{width:100%;float:left}
+@media screen and (min-width:600px){.team-leader{width:30%}
+}.team-leader h2{text-transform:uppercase;color:#93b832;margin:0;font-size:20px;font-family:"Ek Mukta",sans-serif}
+.team-leader .pic{width:100%;margin:0 0 10px 0}
+.team-leader .pic img{width:100%}
+.team-leader .email{width:29px;height:30px}
+.team-leader .email a{width:29px;height:30px;display:block;text-indent:-9000px;-webkit-transition:.3s ease all;transition:.3s ease all;background-image:url(images/mail.png);background-repeat:no-repeat;background-position:top 10px left 0}
+.team-leader .email a:hover{background-position:top 0 left 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
