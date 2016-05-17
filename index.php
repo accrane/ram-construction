@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+<div class="wrapper">
 	<div id="primary" class="">
 		<main id="main" class="site-main" role="main">
 
@@ -112,9 +112,11 @@ get_header(); ?>
 		 
 		<?php wp_reset_postdata(); ?>
 
+		
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div><!-- wrapper -->
 <?php
 
 get_footer();

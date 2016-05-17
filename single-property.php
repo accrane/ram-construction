@@ -32,7 +32,7 @@ if ( $terms && ! is_wp_error( $terms ) ) :
  
 <?php endif; ?>
 
-?>
+
 <div class="wrapper">
 	<div class="page-container">
 	<div id="primary" class="content-area">
@@ -58,7 +58,7 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 		<br>
 	
 	<div class="prop-gallery ">
-	<h2>OTHER PROJECTS</h2>
+	<h2>ADDITIONAL PHOTOS</h2>
 		<?php 
 
 		$images = get_field('photo_gallery');
@@ -88,6 +88,11 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 	</div><!-- widget area -->
 
 </div><!-- page container -->
+
+
+<section class="other-projects">
+	<h2>OTHER PROJECTS</h2>
+
 <?php 
 $wp_query = new WP_Query();
 $wp_query->query(array(
@@ -142,6 +147,7 @@ if ($wp_query->have_posts()) : ?>
 	</div><!-- flexslider -->
 </section>
 <?php endif; ?>
+</section>
 </div>
 <?php
 get_sidebar();

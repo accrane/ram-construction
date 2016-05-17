@@ -81,6 +81,9 @@ get_header(); ?>
 						  <?php echo antispambot($email); ?>
 						</a>
 			    	</div>
+			    	<div class="team-link">
+			    		<a href="<?php the_permalink(); ?>">View Team Member</a>
+			    	</div>
 			    </div><!-- team leader -->
 
 			<?php endwhile; ?>
@@ -147,6 +150,9 @@ wp_reset_query();
 				    	<a href="mailto:<?php echo antispambot($email); ?>">
 						  <?php echo antispambot($email); ?>
 						</a>
+			    	</div>
+			    	<div class="team-link">
+			    		<a href="<?php the_permalink(); ?>">View Team Member</a>
 			    	</div>
 			    </div><!-- team leader -->
 

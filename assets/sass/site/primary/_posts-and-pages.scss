@@ -398,9 +398,11 @@ section.single-port-extra {
 .team-leader {
 	width: 100%;
 	float: left;
+	position: relative;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 30%
+		width: 28%;
+		padding: 1%;
 	}
 
 	h2 {
@@ -432,6 +434,7 @@ section.single-port-extra {
 	.email {
 		width: 29px;
 		height: 30px;
+		z-index: 20;
 
 		a {
 			width: 29px;
@@ -456,4 +459,31 @@ section.single-port-extra {
 
 	} // email
 
+	.team-link a {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		text-indent: -9000px;
+		@include transition(all .3s ease);
+
+		&:hover {
+			background-color: rgba($color-black, .1);
+		}
+	}
+
 } // team leader
+
+section.other-projects {
+	width: 100%;
+	float: left;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 5%;
+
+	@media screen and (min-width: $deskwidth) {
+		padding: 40px;
+	}
+}
