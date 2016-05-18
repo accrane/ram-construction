@@ -54,7 +54,8 @@ get_header(); ?>
 			    	$phone = get_field('phone');
 			    	$email = get_field('email');
 			    	$image = get_field('picture');
-			    	$short_bio = get_field('short_bio');
+			    	$motto = get_field('motto');
+			    	$picture_by = get_field('picture_by');
 			    	$bio = get_field('bio');
 			    	$size = 'full';
 
@@ -73,6 +74,7 @@ get_header(); ?>
 			    <div class="team-leader <?php echo $class; ?>">
 			    	<div class="pic js-blocks">
 			    		<?php if( $image ) { echo wp_get_attachment_image( $image, $size ); } ?>
+			    		<?php if($picture_by != '') { echo '<div class="pic-by">' . $picture_by . '</div>'; } ?>
 			    	</div>
 			    	<h2 class="name"><?php the_title(); ?></h2>
 			    	<div class="position"><?php echo $title__position; ?></div>
@@ -90,7 +92,7 @@ get_header(); ?>
 			</section>
 		<?php endif; ?>
 
-		<h2>THE TEAM</h2>
+		
 
 		<?php
 
@@ -119,7 +121,7 @@ wp_reset_query();
 			));
 				if ($wp_query->have_posts()) : ?>
 				<section class="otherstaff">
-				
+					<h2>THE TEAM</h2>
 			    <?php while ($wp_query->have_posts()) : ?>
 			        
 			    <?php $wp_query->the_post(); $i++;
@@ -127,7 +129,8 @@ wp_reset_query();
 			    	$phone = get_field('phone');
 			    	$email = get_field('email');
 			    	$image = get_field('picture');
-			    	$short_bio = get_field('short_bio');
+			    	$motto = get_field('motto');
+			    	$picture_by = get_field('picture_by');
 			    	$bio = get_field('bio');
 			    	$size = 'full';
 

@@ -42,7 +42,8 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
-			<?php echo wp_get_attachment_image( $image, $size ); ?>
+			<div class="single-proj-image"><?php echo wp_get_attachment_image( $image, $size ); ?></div>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -58,7 +59,6 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 		<br>
 	
 	<div class="prop-gallery ">
-	<h2>ADDITIONAL PHOTOS</h2>
 		<?php 
 
 		$images = get_field('photo_gallery');
@@ -127,15 +127,15 @@ if ($wp_query->have_posts()) : ?>
 				// }
 			?>
 				<li>
-					<div class="portfolio-item <?php echo $class; ?> ">
+					<div class="portfolio-item-slide <?php //echo $class; ?> ">
 						<a href="<?php the_permalink(); ?>">
 							<?php if( $image ) { ?>
-								<div class="img js-blocks">
+								<div class="img">
 									<?php echo wp_get_attachment_image( $image, $size ); ?>
 								</div>
 							<?php } ?>
 							<div class="title">
-								<h2><?php the_title(); ?></h2>
+								<h3><?php the_title(); ?></h3>
 								<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
 							</div><!-- title -->
 						</a>

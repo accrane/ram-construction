@@ -46,7 +46,7 @@ body {
 	margin: 0px auto;
 	
 	@media screen and (min-width: $tabwidth) {
-		width: 70%;
+		width: 65%;
 		float: left;
 		margin: 0;
 	}
@@ -62,6 +62,32 @@ body {
 	@media screen and (min-width: $tabwidth) {
 		width: 33%;
 		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.content-area-single-team {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.single-team-pic{
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 50%;
+		float: right;
 		margin: 0;
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -242,7 +268,7 @@ section.header-right {
 }
 .page-container {
 	width: 100%;
-	padding: 5%;
+	padding: 20px 5%;
 	background-color: #fff;
 	overflow: hidden;
 	border-top: 5px solid $color-green;

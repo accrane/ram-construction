@@ -81,9 +81,9 @@ jQuery(document).ready(function ($) {
 	*	Flexslider
 	*
 	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
+	// $('.flexslider').flexslider({
+	// 	animation: "slide",
+	// }); // end register flexslider
 
 
 	(function() {
@@ -106,7 +106,7 @@ jQuery(document).ready(function ($) {
 	    $('.carousel').flexslider({
 	      animation: "slide",
 	      animationLoop: false,
-	      itemWidth: 210,
+	      itemWidth: 310,
 	      itemMargin: 30,
 	      minItems: getGridSize(), // use function to pull in initial value
 	      maxItems: getGridSize() // use function to pull in initial value

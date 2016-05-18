@@ -3,9 +3,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-content h1,
-h1.entry-title
+h1.entry-title,
+.other-projects h2,
+.other-leaders h2
 {
-	font-size: 30px;
+	font: {
+		size: 30px;
+		family: $font__heading;
+	}
+	text-transform: uppercase;
 
 	&:after {
 		width: 100px;
@@ -14,5 +20,38 @@ h1.entry-title
 		clear: both;
 		height: 2px;
 		display: block;
+	}
+}
+
+h1.entry-title-team {
+	width: auto;
+	display: inline-block;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+
+	font: {
+		size: 30px;
+		family: $font__heading;
+	}
+
+	&:after {
+		width: 100px;
+		background: #000;
+		content: ' ';
+		clear: both;
+		height: 2px;
+		display: block;
+	}
+}
+
+.entry-content {
+	h2 {
+		color: $color-green;
+		font: {
+			size: 18px;
+			family: $font__heading;
+			weight: 400;
+		}
 	}
 }
