@@ -55,6 +55,8 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 	<?php echo '<div class="proj-details-copy">Project Type: ' . $projTypeTerm . '</div>'; ?>
 	<?php if($total_sq_footage != '') {echo '<div class="proj-details-copy">Total Square Footage: ' . $total_sq_footage . '</div>';} ?>
 	<?php if($total_bedsbaths != '') {echo '<div class="proj-details-copy">Total Beds/Baths: ' . $total_bedsbaths . '</div>';} ?>
+	<?php if($cost != '') {echo '<div class="proj-details-copy">Cost: ' . $cost . '</div>';} ?>
+	<?php if($short_description != '') {echo '<div class="">' . $short_description . '</div>';} ?>
 	
 		<br>
 	
@@ -133,7 +135,7 @@ if ($wp_query->have_posts()) : ?>
 								<div class="img">
 									<?php echo wp_get_attachment_image( $image, $size ); ?>
 								</div>
-							<?php } ?>
+							<?php } else {echo '<img src="' . get_bloginfo('template_url') . '/images/default.png" />';} ?>
 							<div class="title">
 								<h3><?php the_title(); ?></h3>
 								<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>

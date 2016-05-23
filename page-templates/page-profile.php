@@ -83,9 +83,11 @@ get_header(); ?>
 						  <?php echo antispambot($email); ?>
 						</a>
 			    	</div>
-			    	<div class="team-link">
-			    		<a href="<?php the_permalink(); ?>">View Team Member</a>
-			    	</div>
+			    	<?php //if ( has_term('leader', 'team_type', $post ) ) { ?>
+				    	<div class="team-link">
+				    		<a href="<?php the_permalink(); ?>">View Team Member</a>
+				    	</div>
+			    	<?php //} ?>
 			    </div><!-- team leader -->
 
 			<?php endwhile; ?>
@@ -154,9 +156,7 @@ wp_reset_query();
 						  <?php echo antispambot($email); ?>
 						</a>
 			    	</div>
-			    	<div class="team-link">
-			    		<a href="<?php the_permalink(); ?>">View Team Member</a>
-			    	</div>
+			    	
 			    </div><!-- team leader -->
 
 			<?php endwhile; ?>

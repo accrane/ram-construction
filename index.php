@@ -50,6 +50,11 @@ get_header(); ?>
 			<div class="box-wrap">
 				<?php echo $right_box_content; ?>
 	 		</div><!-- box wrap -->
+
+	 		<div class="next">
+				<i class="fa fa-angle-right fa-2x " aria-hidden="true"></i>
+			</div><!-- next -->
+	 		
 		</div><!-- home-first-block -->
 
 		<div class="home-black-box js-blocks">
@@ -85,14 +90,14 @@ get_header(); ?>
 		</div><!-- home-first-block -->
 
 
-		<div class="facebook-feed">
+		<div class="facebook-feed js-blocks">
 			<h2><?php echo $facebook_feed; ?></h2>
 			<div class="feed-wrap">
 				<?php echo do_shortcode('[custom-facebook-feed]'); ?>
 			</div>
 		</div>
 
-		<div class="sponsors-box">
+		<div class="sponsors-box js-blocks">
 			<div class="box-wrap">
 				<?php if( have_rows('logos')) : while(have_rows('logos')) : the_row();
 					$logo_link = get_sub_field('logo_link');
@@ -101,7 +106,7 @@ get_header(); ?>
 				 ?>
 				 	<div class="sponsors">
 				 		<?php 
-					 		if( $logo_link != '' ) {echo '<a href="'.$logo_link.'">';}
+					 		if( $logo_link != '' ) {echo '<a target="_blank" href="'.$logo_link.'">';}
 					 			echo wp_get_attachment_image( $logo, $size );
 					 		if( $logo_link != '' ) {echo '</a>';}
 				 		 ?>

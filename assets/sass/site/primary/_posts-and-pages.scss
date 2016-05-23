@@ -87,6 +87,10 @@
 			background-color: rgba(0,0,0,.2);
 		}
 	}
+	.next {
+		right: 20px;
+		bottom:30px;
+	}
 }
 .home-black-box {
 	width: 100%;
@@ -206,9 +210,13 @@
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	right: -30px;
-	top: 45%;
 	color: $color-green;
+}
+.column-1 {
+	.next {
+		right: -30px;
+		top: 45%;
+	}
 }
 .facebook-feed {
 	width: 100%;
@@ -666,7 +674,7 @@ section.other-leaders {
 			position: absolute;
 			top: 0;
 			left: 0;
-
+			text-indent: -9000px;
 
 		}
 		&:hover {

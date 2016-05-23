@@ -51,7 +51,7 @@ if( $i == 3 ) {
 				<div class="img js-blocks">
 					<?php echo wp_get_attachment_image( $image, $size ); ?>
 				</div>
-			<?php } ?>
+			<?php } else { echo '<img src="' . get_bloginfo('template_url') . '/images/default.png" />'; } ?>
 			<div class="title">
 				<h2><?php the_title(); ?></h2>
 				<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
