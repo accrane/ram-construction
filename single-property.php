@@ -96,6 +96,7 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 	<h2>OTHER PROJECTS</h2>
 
 <?php 
+$i = 0;
 $wp_query = new WP_Query();
 $wp_query->query(array(
 	'post_type'=>'property',
@@ -111,7 +112,7 @@ $wp_query->query(array(
 ));
 if ($wp_query->have_posts()) : ?>
 <section class="single-port-extra">
-	<div class="flexslider carousel">
+	<div class="prop carousel">
         <ul class="slides">
 		
 			<?php while ($wp_query->have_posts()) : $wp_query->the_post(); 
