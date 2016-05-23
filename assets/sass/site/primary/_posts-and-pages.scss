@@ -373,6 +373,20 @@ section.black-quote {
 		width: 60%;
 		margin: 0 auto;
 		text-align: center;
+		position: relative;
+	}
+	.fa-quote-left, .fa-quote-right {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+	}
+	.fa-quote-left {
+		top: -20px;
+		left: -40px;
+	}
+	.fa-quote-right {
+		bottom: -20px;
+		right: -20px;
 	}
 }
 section.single-port-extra {

@@ -74,7 +74,14 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	$('.js-blocks').matchHeight();
-
+	/*
+	*
+	*	Flexslider
+	*
+	------------------------------------*/
+	$('.flexslider').flexslider({
+		animation: "slide",
+	}); // end register flexslider
 
 	/*
 	*

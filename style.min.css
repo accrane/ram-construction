@@ -1517,7 +1517,10 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .single-proj-image{width:100%}
 .single-proj-image img{width:100%}
 section.black-quote{width:100%;padding:20px;background-color:#000;color:#fff;overflow:hidden;margin:20px 0 0 0}
-section.black-quote .quote{width:60%;margin:0 auto;text-align:center}
+section.black-quote .quote{width:60%;margin:0 auto;text-align:center;position:relative}
+section.black-quote .fa-quote-left,section.black-quote .fa-quote-right{width:30px;height:30px;position:absolute}
+section.black-quote .fa-quote-left{top:-20px;left:-40px}
+section.black-quote .fa-quote-right{bottom:-20px;right:-20px}
 section.single-port-extra{width:100%;padding:20px 20px 40px 20px;background-color:#fff;overflow:hidden;margin:20px 0 0 0}
 .prop-gallery .first{margin:0 0 5px 0}
 @media screen and (min-width:600px){.prop-gallery .first{margin:0 4% 4% 0}

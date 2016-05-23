@@ -82,7 +82,9 @@ if ($wp_query->have_posts()) : ?>
 			<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 				<li>
 					<div class="quote">
+						<i class="fa fa-2x fa-quote-left" aria-hidden="true"></i>
 						<?php the_content(); ?>
+						<i class="fa fa-2x fa-quote-right" aria-hidden="true"></i>
 					</div>
 				</li>
 			<?php endwhile; ?>
