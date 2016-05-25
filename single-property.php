@@ -52,11 +52,18 @@ if ( $terms && ! is_wp_error( $terms ) ) :
 
 	<div class="proj-details-head">PROJECT DETAILS</div>
 
-	<?php echo '<div class="proj-details-copy">Project Type: <span class="black">' . $projTypeTerm . '</span></div>'; ?>
-	<?php if($total_sq_footage != '') {echo '<div class="proj-details-copy">Total Square Footage: <span class="black">' . $total_sq_footage . '</span></div>';} ?>
-	<?php if($total_bedsbaths != '') {echo '<div class="proj-details-copy">Total Beds/Baths: <span class="black">' . $total_bedsbaths . '</span></div>';} ?>
-	<?php if($cost != '') {echo '<div class="proj-details-copy">Cost: <span class="black">' . $cost . '</span></div>';} ?>
-	<?php if($short_description != '') {echo '<div class="">' . $short_description . '</div>';} ?>
+	<?php 
+		if( has_term('portfolio', 'property_type') ) {
+			echo '<div class="proj-details-copy">Project Type: <span class="black">' . $projTypeTerm . '</span></div>'; 
+		}
+
+	 if($total_sq_footage != '') {echo '<div class="proj-details-copy">Total Square Footage: <span class="black">' . $total_sq_footage . '</span></div>';} 
+
+	  if($total_bedsbaths != '') {echo '<div class="proj-details-copy">Total Beds/Baths: <span class="black">' . $total_bedsbaths . '</span></div>';} 
+
+	   if($cost != '') {echo '<div class="proj-details-copy">Cost: <span class="black">' . $cost . '</span></div>';} 
+
+	  if($short_description != '') {echo '<div class="">' . $short_description . '</div>';} ?>
 	
 		<br>
 	
