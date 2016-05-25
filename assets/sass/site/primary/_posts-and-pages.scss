@@ -101,17 +101,20 @@
 		bottom:30px;
 	}
 }
+.home-black-box, .black-quote {
+	background: {
+		image: url(images/ram.png);
+		repeat: no-repeat;
+		position: center center;
+	}
+}
 .home-black-box {
 	width: 100%;
 	z-index: 10;
 	margin: 0 0 30px 0;
 	background-color: #000;
 	position: relative;
-	background: {
-		image: url(images/ram.png);
-		repeat: no-repeat;
-		position: center center;
-	}
+	
 
 	@media screen and (min-width: $tabwidth) {
 		width: 25%;

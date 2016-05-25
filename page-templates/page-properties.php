@@ -3,7 +3,9 @@
  * Template Name: Properties
  */
 
-get_header(); ?>
+get_header(); 
+
+?>
 <div class="wrapper">
 <div class="page-container">
 	<div id="primary" class="">
@@ -12,6 +14,14 @@ get_header(); ?>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
+
+			<div class="entry-content">
+				<?php 
+				while( have_posts() ) : the_post();
+					the_content(); 
+				endwhile;
+				?>
+			</div>
 <?php
 $i=0;
 $wp_query = new WP_Query();
