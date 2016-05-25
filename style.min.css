@@ -1238,9 +1238,11 @@ body,button,input,select,textarea{color:#39393f;font-family:"Crimson Text",serif
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1,h1.entry-title,.other-projects h2,.other-leaders h2{font-size:30px;font-family:"Ek Mukta",sans-serif;text-transform:uppercase}
 .entry-content h1:after,h1.entry-title:after,.other-projects h2:after,.other-leaders h2:after{width:100px;background:#000;content:' ';clear:both;height:2px;display:block}
-h1.entry-title-team{width:auto;display:inline-block;position:relative;float:left;text-transform:uppercase;font-size:30px;font-family:"Ek Mukta",sans-serif}
+h1.entry-title-team{width:auto;display:inline-block;position:relative;float:left;margin:8px 0;text-transform:uppercase;font-size:30px;font-family:"Ek Mukta",sans-serif}
 h1.entry-title-team:after{width:100px;background:#000;content:' ';clear:both;height:2px;display:block}
-.entry-content h2{color:#93b832;font-size:18px;font-family:"Ek Mukta",sans-serif;font-weight:400}
+@media screen and (min-width:600px){h1.entry-title-team{margin:10px 0}
+}@media screen and (min-width:1200px){h1.entry-title-team{margin:24px 0}
+}.entry-content h2{color:#000;font-size:22px;font-family:"Ek Mukta",sans-serif;font-weight:600}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
@@ -1287,7 +1289,10 @@ a:hover,a:active{outline:0}
 .main-navigation ul ul a{width:200px}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
 .main-navigation li{float:left;position:relative;text-transform:uppercase;line-height:3;width:100%;font-family:"Ek Mukta",sans-serif;font-size:16px}
-@media screen and (min-width:600px){.main-navigation li{width:auto}
+@media screen and (min-width:600px){.main-navigation li{width:auto;font-size:14px}
+}@media screen and (min-width:700px){.main-navigation li{font-size:12px}
+}@media screen and (min-width:900px){.main-navigation li{font-size:16px}
+}@media screen and (min-width:1200px){.main-navigation li{font-size:16px}
 }.main-navigation a{display:block;text-decoration:none;color:#fff;padding:0 10px;-webkit-transition:all ease .3s;transition:all ease .3s}
 .main-navigation a:hover{color:#93b832}
 .menu-toggle,.main-navigation.toggled ul{display:block;background-color:#93b832;-webkit-transition:all ease .3s;transition:all ease .3s}
@@ -1426,24 +1431,27 @@ body{background-image:url(images/bg.png);background-size:contain;background-repe
 }@media screen and (min-width:1200px){}
 #masthead{background-color:rgba(35,31,32,0.7);overflow:hidden;border-bottom:4px solid #231f20;margin:0 0 40px 0}
 section.header-right{width:100%;text-align:center}
-@media screen and (min-width:600px){section.header-right{width:auto;float:right}
-}section.header-right .contact{color:#fff;width:100%}
+@media screen and (min-width:600px){section.header-right{width:auto;float:right;margin-top:-90px}
+}@media screen and (min-width:700px){section.header-right{margin:0}
+}section.header-right .contact{color:#fff;width:100%;font-family:"Ek Mukta",sans-serif}
 @media screen and (min-width:600px){section.header-right .contact{width:auto;display:inline-block;float:right}
 }section.header-right .contact a{color:#fff}
 section.header-right .tagline{color:#70707b;width:100%;clear:both}
 @media screen and (min-width:600px){section.header-right .tagline{width:100%;display:inline-block;float:right;text-align:right}
 }#page{background-color:rgba(35,31,32,0.7);overflow:hidden}
-.social-links{width:auto;display:inline-block;float:right}
-.social-links li{width:30px;height:30px;float:left;list-style:none;margin:5px 5px 0 5px}
+.social-links{width:auto;display:inline-block}
+@media screen and (min-width:600px){.social-links{float:right}
+}.social-links li{width:30px;height:30px;float:left;list-style:none;margin:5px 5px 0 5px}
 .social-links li i{width:30px;height:30px;position:relative;color:#fff;-webkit-transition:all .1s ease;transition:all .1s ease}
 .social-links li i:hover{color:#93b832;-webkit-transform:scale(1.4);-ms-transform:scale(1.4);transform:scale(1.4)}
 .social-links li i a{width:30px;height:30px;position:absolute;top:0;left:0;display:block;text-indent:-9000px}
 .social-links a{color:#fff}
-.site-footer{width:100%;clear:both;background-color:#3a3b40;color:#fff;overflow:hidden;margin:20px 0 0 0;padding:30px 0 30px 0;font-family:"Crimson Text",serif;font-size:14px}
+.site-footer{width:100%;clear:both;background-color:#3a3b40;color:#fff;overflow:hidden;margin:20px 0 0 0;padding:30px 0 30px 0;font-family:"Ek Mukta",sans-serif;font-size:14px}
 .site-footer h3{width:auto;display:inline-block;border-bottom:1px solid #93b832;margin:0}
 .site-footer .footer-left{width:auto;display:inline-block;float:left}
-.site-footer .footer-right{width:auto;display:inline-block;float:right}
-.page-container{width:100%;padding:20px 5%;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
+.site-footer .footer-right{width:auto;display:inline-block;float:left}
+@media screen and (min-width:600px){.site-footer .footer-right{float:right}
+}.page-container{width:100%;padding:20px 5%;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
 @media screen and (min-width:1200px){.page-container{min-height:550px;padding:40px}
 }.sticky{display:block}
 .hentry{margin:0 0 1.5em}
@@ -1454,13 +1462,14 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .hero-image{width:100%;margin:0 0 30px 0}
 @media screen and (min-width:600px){.hero-image{width:66%;float:left;margin:0 0 40px}
 }.hero-image img{width:100%}
-.box-wrap{padding:20px}
+.box-wrap{padding:20px;overflow:hidden}
 @media screen and (min-width:600px){.box-wrap{padding:20px}
-}@media screen and (min-width:1200px){.box-wrap{padding:30px}
-}.home-first-block{width:100%;margin:0 0 30px 0;background-color:#fff;position:relative}
+}@media screen and (min-width:1200px){.box-wrap{padding:30px 50px}
+}.ek h2{font-family:"Ek Mukta",sans-serif;font-weight:500}
+.home-first-block{width:100%;margin:0 0 30px 0;background-color:#fff;position:relative}
 @media screen and (min-width:600px){.home-first-block{width:30%;float:right;margin:0 0 40px}
 }.home-first-block p{margin:0 0 10px 0}
-.home-first-block h2{border-bottom:2px solid #231f20;margin:0;font-font-family:"Ek Mukta",sans-serif;font-size:20px;font-weight:700}
+.home-first-block h2{border-bottom:2px solid #231f20;margin:0;font-family:"Ek Mukta",sans-serif;font-size:20px;font-weight:700}
 .home-first-block .hfb-a a{width:100%;height:100%;position:absolute;top:0;left:0;display:block;background-color:transparent;-webkit-transition:all .3s ease;transition:all .3s ease}
 .home-first-block .hfb-a a:hover{background-color:rgba(0,0,0,0.2)}
 .home-first-block .next{right:20px;bottom:30px}
@@ -1505,8 +1514,9 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 }.portfolio-item a{display:block;overflow:hidden}
 .portfolio-item a:hover i{margin:10px 0 0 0}
 .portfolio-item .title{color:#93b832}
-.portfolio-item .title h2{width:auto;float:left;display:inline-block;text-align:left;margin:5px 0 0 0;font-family:"Ek Mukta",sans-serif}
-.portfolio-item .title i{width:auto;float:right;margin:10px 10px 0 0;-webkit-transition:.3s ease all;transition:.3s ease all}
+.portfolio-item .title h2{width:auto;float:left;display:inline-block;text-align:left;margin:5px 0 0 0;font-family:"Ek Mukta",sans-serif;font-size:20px}
+.portfolio-item .title i{width:auto;float:right;margin:10px 10px 0 0;font-size:1.5em;-webkit-transition:.3s ease all;transition:.3s ease all}
+.black{color:#000}
 .portfolio-item-slide{width:100%}
 .portfolio-item-slide img{width:100%}
 .portfolio-item-slide a{display:block;overflow:hidden}
@@ -1542,29 +1552,33 @@ section.single-port-extra{width:100%;padding:20px 20px 40px 20px;background-colo
 }.team-leader h2{text-transform:uppercase;color:#93b832;margin:0;font-size:20px;font-family:"Ek Mukta",sans-serif}
 .team-leader .pic{width:100%;margin:0 0 10px 0}
 .team-leader .pic img{width:100%}
-.team-leader .email{width:29px;height:30px;z-index:20}
+.team-leader .email{width:29px;height:30px;z-index:20;position:relative}
 .team-leader .email a{width:29px;height:30px;display:block;text-indent:-9000px;-webkit-transition:.3s ease all;transition:.3s ease all;background-image:url(images/mail.png);background-repeat:no-repeat;background-position:top 10px left 0}
 .team-leader .email a:hover{background-position:top 0 left 0}
 .team-leader .team-link a{width:100%;height:100%;position:absolute;z-index:10;top:0;left:0;text-indent:-9000px;-webkit-transition:all .3s ease;transition:all .3s ease}
 .team-leader .team-link a:hover{background-color:rgba(35,31,32,0.1)}
 .pic-by{color:#999;font-size:12px;font-family:"Ek Mukta",sans-serif}
-.email-team{width:29px;height:30px;z-index:20;float:left;margin:26px}
+.email-team{width:29px;height:30px;z-index:20;float:left;margin:10px;clear:both}
 .email-team a{width:29px;height:30px;display:block;text-indent:-9000px;-webkit-transition:.3s ease all;transition:.3s ease all;background-image:url(images/mail.png);background-repeat:no-repeat;background-position:top 10px left 0}
 .email-team a:hover{background-position:top 0 left 0}
-.position-single{color:#93b832;font-size:18px;font-family:"Ek Mukta",sans-serif}
+@media screen and (min-width:1200px){.email-team{clear:none;margin:26px}
+}.position-single{color:#93b832;font-size:18px;font-family:"Ek Mukta",sans-serif}
 section.otherstaff h2{font-family:"Ek Mukta",sans-serif;font-size:22px;font-weight:600;margin-top:30px;display:inline-block;float:left;width:100%}
 section.other-leaders{width:100%;padding:20px 5%;background-color:#fff;margin:40px auto;overflow:hidden}
-section.other-leaders .other-leader{width:100%;float:left;position:relative}
+section.other-leaders .other-leader{width:100%;float:left;position:relative;margin:0 0 40px 0}
 section.other-leaders .other-leader img{width:100%}
-section.other-leaders .other-leader .pic-by{width:100%;position:absolute;bottom:5px;left:40%}
-@media screen and (min-width:600px){section.other-leaders .other-leader{width:28%;margin:0 8% 30px 0}
+section.other-leaders .other-leader .pic-by{width:100%;float:left}
+@media screen and (min-width:600px){section.other-leaders .other-leader .pic-by{position:absolute;bottom:5px;left:40%}
+}@media screen and (min-width:1200px){section.other-leaders .other-leader{width:28%;margin:0 8% 30px 0}
 }section.other-leaders .other-leader .other-leader-pic{width:100%;float:left}
 @media screen and (min-width:600px){section.other-leaders .other-leader .other-leader-pic{width:30%;float:left}
 }section.other-leaders .other-leader .other-leader-pic img{width:100%}
-section.other-leaders .other-leader .other-leader-right{width:100%;position:relative}
-@media screen and (min-width:600px){section.other-leaders .other-leader .other-leader-right{width:60%;float:right}
+section.other-leaders .other-leader .other-leader-right{width:100%;position:relative;margin:0 0 20px 0}
+@media screen and (min-width:600px){section.other-leaders .other-leader .other-leader-right{width:60%;float:right;margin:0}
 }section.other-leaders .other-leader .title{width:100%;position:relative;color:#93b832;font-size:18px;font-family:"Ek Mukta",sans-serif}
-section.other-leaders .other-leader .title i{width:auto;float:right;margin:5px 10px 0 0;-webkit-transition:.3s ease all;transition:.3s ease all}
+@media screen and (min-width:600px){section.other-leaders .other-leader .title{font-size:24px}
+}@media screen and (min-width:1200px){section.other-leaders .other-leader .title{font-size:18px}
+}section.other-leaders .other-leader .title i{width:auto;float:right;margin:5px 10px 0 0;-webkit-transition:.3s ease all;transition:.3s ease all}
 section.other-leaders .other-leader .position-single{color:#000;line-height:1;font-size:14px;font-family:"Crimson Text",serif}
 section.other-leaders .other-leader .link a{width:100%;height:100%;position:absolute;top:0;left:0;text-indent:-9000px}
 section.other-leaders .other-leader:hover .title i{margin:5px 5px 0 0}

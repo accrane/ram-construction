@@ -42,11 +42,20 @@
 }
 .box-wrap {
 	padding: 20px;
+	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
 		padding: 20px;
 	}
 	@media screen and (min-width: $deskwidth) {
-		padding: 30px;
+		padding: 30px 50px;
+	}
+}
+.ek {
+	h2 {
+		font: {
+			family: $font__heading;
+			weight: 500;
+		}
 	}
 }
 .home-first-block {
@@ -67,7 +76,7 @@
 		border-bottom: 2px solid $color-black;
 		margin: 0 0 0px 0;
 		font: {
-			font-family: $font__heading;
+			family: $font__heading;
 			size: 20px;
 			weight: 700;
 		}
@@ -309,17 +318,20 @@
 			text-align:  left;
 			margin: 5px 0 0 0;
 			font: {
-				family: $font__heading
+				family: $font__heading;
+				size: 20px;
 			}
 		} // h2
 		i {
 			width: auto;
 			float: right;
 			margin: 10px 10px 0 0;
+			font-size: 1.5em;
 			@include transition(.3s ease all);
 		}
 	} // title
 } // portfolio item
+.black {color: #000;}
 .portfolio-item-slide {
 	width: 100%;
 
@@ -510,6 +522,7 @@ section.single-port-extra {
 		width: 29px;
 		height: 30px;
 		z-index: 20;
+		position: relative;
 
 		a {
 			width: 29px;
@@ -562,7 +575,8 @@ section.single-port-extra {
 	height: 30px;
 	z-index: 20;
 	float: left;
-	margin: 26px;
+	margin: 10px;
+	clear: both;
 
 	a {
 		width: 29px;
@@ -581,8 +595,9 @@ section.single-port-extra {
 		}
 	}
 
-	@media screen and (min-width: $tabwidth) {
-
+	@media screen and (min-width: $deskwidth) {
+		clear: none;
+		margin: 26px;
 	}
 
 } // email
@@ -621,17 +636,22 @@ section.other-leaders {
 		width: 100%;
 		float: left;
 		position: relative;
+		margin: 0 0 40px 0;
 		img {
 			width: 100%;
 		}
 		.pic-by {
 			width: 100%;
-			position: absolute;
-			bottom: 5px;
-			left: 40%;
+			float: left;
+
+			@media screen and (min-width: $tabwidth) {
+				position: absolute;
+				bottom: 5px;
+				left: 40%;
+			}
 		}
 
-		@media screen and (min-width: $tabwidth) {
+		@media screen and (min-width: $deskwidth) {
 			width: 28%;
 			margin: 0 8% 30px 0;
 		}
@@ -653,9 +673,11 @@ section.other-leaders {
 		.other-leader-right {
 			width: 100%;
 			position: relative;
+			margin: 0 0 20px 0;
 			@media screen and (min-width: $tabwidth) {
 				width: 60%;
 				float: right;
+				margin: 0;
 			}
 
 		}
@@ -666,6 +688,12 @@ section.other-leaders {
 			font: {
 				size: 18px;
 				family: $font__heading;
+			}
+			@media screen and (min-width: $tabwidth) {
+				font-size: 24px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 18px;
 			}
 			i {
 				width: auto;

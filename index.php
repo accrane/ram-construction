@@ -64,7 +64,7 @@ get_header(); ?>
 		</div><!-- ome-black-box -->
 
 		<div class="home-experience js-blocks">
-			<div class="box-wrap">
+			<div class="box-wrap ek">
 				<h2><?php echo $second_info_box; ?></h2>
 				<div class="column-1 column-first">
 					<h3><?php echo $fisrt_column_title; ?></h3>
@@ -79,7 +79,18 @@ get_header(); ?>
 				</div>
 
 				<div class="column-3 column-last">
-					<?php echo wp_get_attachment_image( $third_column_image, $size ); ?>
+					<?php 
+						if( $third_column_image ): ?>
+						<div class="flexslider">
+						    <ul class="slides">
+						        <?php foreach( $third_column_image as $image ): ?>
+						            <li>
+						                <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+						            </li>
+						        <?php endforeach; ?>
+						    </ul>
+						<?php endif; ?>
+						</div><!-- flexslider -->
 				</div>
 			</div><!-- box wrap -->
 			<div class="bottom-border">

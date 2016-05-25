@@ -28,6 +28,7 @@ h1.entry-title-team {
 	display: inline-block;
 	position: relative;
 	float: left;
+	margin: 8px 0;
 	text-transform: uppercase;
 
 	font: {
@@ -43,15 +44,22 @@ h1.entry-title-team {
 		height: 2px;
 		display: block;
 	}
+
+	@media screen and (min-width: $tabwidth) {
+		margin: 10px 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin: 24px 0;
+	}
 }
 
 .entry-content {
 	h2 {
-		color: $color-green;
+		color: #000;
 		font: {
-			size: 18px;
+			size: 22px;
 			family: $font__heading;
-			weight: 400;
+			weight: 600;
 		}
 	}
 }

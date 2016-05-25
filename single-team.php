@@ -79,6 +79,7 @@ $ID = get_the_ID();
 		<?php 
 		wp_reset_query();
 		// Query
+		$i=0;
 			$wp_query = new WP_Query();
 			$wp_query->query(array(
 			'post_type'=>'team',
@@ -129,7 +130,7 @@ $ID = get_the_ID();
 		<?php endif; ?>
 
 		<div class="other-leader-last">
-			<a href="<?php bloginfo('url'); ?>">
+			<a href="<?php bloginfo('url'); ?>/process">
 				<img src="<?php bloginfo('template_url'); ?>/images/what-sets-us-apart.png" />
 			</a>
 		</div>

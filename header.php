@@ -62,12 +62,12 @@ $houzz = get_field('houzz_link', 'option');
 				<div class="social-links">
 					<li>
 						<i class="fa fa-facebook fa-2x " aria-hidden="true">
-							<a href="<?php echo $facebook; ?>">facebook</a>
+							<a target="_blank" href="<?php echo $facebook; ?>">facebook</a>
 						</i>
 					</li>
 					<li>
 						<i class="fa fa-houzz fa-2x" aria-hidden="true">
-							<a href="<?php echo $houzz; ?>">houzz</a>
+							<a target="_blank" href="<?php echo $houzz; ?>">houzz</a>
 						</i>
 					</li>
 				</div><!-- social links -->
