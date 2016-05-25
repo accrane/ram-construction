@@ -121,12 +121,24 @@ function build_taxonomies() {
     register_taxonomy( 'property_type', 'property',
    array( 
       'hierarchical' => true, // true = acts like categories false = acts like tags
-      'label' => 'Property Type', 
+      'label' => 'Organized By', 
       'query_var' => true, 
       'rewrite' => true ,
       'show_admin_column' => true,
       'public' => true,
       'rewrite' => array( 'slug' => 'property-type' ),
+      '_builtin' => true
+      ) );
+
+    register_taxonomy( 'property_cat', 'property',
+    array( 
+      'hierarchical' => true, // true = acts like categories false = acts like tags
+      'label' => 'Category', 
+      'query_var' => true, 
+      'rewrite' => true ,
+      'show_admin_column' => true,
+      'public' => true,
+      'rewrite' => array( 'slug' => 'property-category' ),
       '_builtin' => true
       ) );
 

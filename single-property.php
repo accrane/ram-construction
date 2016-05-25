@@ -17,7 +17,7 @@ $cost = get_field('cost');
 $image = get_field('featured_photo');
 $size = 'large'; 
 
-$terms = get_the_terms( get_the_ID(), 'property_type' );
+$terms = get_the_terms( get_the_ID(), 'property_cat' );
                          
 if ( $terms && ! is_wp_error( $terms ) ) : 
  
