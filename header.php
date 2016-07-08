@@ -24,6 +24,7 @@ wp_head();
 
 $facebook = get_field('facebook_link', 'option');
 $houzz = get_field('houzz_link', 'option');
+$phone = get_field('phone', 'option');
 
 ?>
 </head>
@@ -47,10 +48,7 @@ $houzz = get_field('houzz_link', 'option');
 
 	        <section class="header-right">
 	        	<div class="contact">
-	        		<?php 
-	        			$phone = get_field('phone', 'option');
-	        			echo $phone;
-	        		 ?>
+	        		<?php echo $phone; ?>
 	        	</div><!-- contact -->
 	        	<div class="tagline">
 	        		<?php bloginfo('description'); ?>

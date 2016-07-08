@@ -127,7 +127,7 @@ body {
 		width: 100px;
 		height: 124px;
 		float: left;
-		margin: 20px0 0 0;
+		margin: 20px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
@@ -145,6 +145,17 @@ body {
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
+	}
+}
+.footerlogo {
+	width: 60px;
+	margin: 10px auto;
+
+	img {width: 100%;}
+
+	@media screen and (min-width: $tabwidth) {
+		float:  left;
+		margin: 0 15px 15px;
 	}
 }
 #masthead {
@@ -182,7 +193,7 @@ section.header-right {
 		}
 	}
 	.tagline {
-		color: $color-light-grey;
+		color: $color-lighter-grey;
 		width: 100%;
 		clear: both;
 
@@ -257,17 +268,22 @@ section.header-right {
 		margin: 0;
 	}
 	.footer-left {
-		width: auto; 
+		 width: 100%;
 		display: inline-block;
-		float: left;
+
+		@media screen and (min-width: $tabwidth) {
+			float: left;
+			width: auto;
+		}
 	}
 	.footer-right {
-		width: auto; 
+		width: 100%;
 		display: inline-block;
 		float: left;
 
 		@media screen and (min-width: $tabwidth) {
 			float: right;
+			width: auto; 
 		}
 	}
 }

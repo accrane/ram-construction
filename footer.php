@@ -12,7 +12,7 @@
 
 $sitemapLink = get_field('sitemap_link', 'option'); 
 $phone = get_field('phone', 'option'); 
-$fax = get_field('sitemap_link', 'option'); 
+$fax = get_field('fax', 'option'); 
 $email = get_field('contact_email', 'option'); 
 
 ?>
@@ -24,6 +24,11 @@ $email = get_field('contact_email', 'option');
 			<div class="site-info">
 
 				<div class="footer-left">
+				<div class="footerlogo">
+					<a href="<?php bloginfo('url'); ?>">
+						<img src="<?php bloginfo('template_url'); ?>/images/ram-logo.png">
+					</a>
+				</div>
 				<h3><?php echo get_bloginfo('name') . ' | Charlotte, NC'; ?></h3>
 					<br>
 					<?php echo get_bloginfo('description'); ?>
@@ -34,7 +39,7 @@ $email = get_field('contact_email', 'option');
 
 				<div class="footer-right">
 
-					<?php echo $phone; ?>
+					<?php echo $phone . ' | ' . $fax; ?>
 					<br>
 					<a href="mailto:<?php echo antispambot($email); ?>">
 					  <?php echo antispambot($email); ?>

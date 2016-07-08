@@ -1424,19 +1424,22 @@ body{background-image:url(images/bg.png);background-size:contain;background-repe
 @media screen and (min-width:600px){.widget-area{width:30%;float:right;margin:85px 0 0 0}
 }@media screen and (min-width:1200px){}
 .logo,h1.logo{width:100px;height:124px;background-image:url(images/ram-logo.png);margin:10px auto;background-size:cover}
-@media screen and (min-width:600px){.logo,h1.logo{width:100px;height:124px;float:left;margin:20px0 0 0}
+@media screen and (min-width:600px){.logo,h1.logo{width:100px;height:124px;float:left;margin:20px 0 0 0}
 }@media screen and (min-width:1200px){}
 .logo a,h1.logo a{width:100px;height:124px;display:block;text-indent:-9000px}
 @media screen and (min-width:600px){.logo a,h1.logo a{width:100px;height:124px}
 }@media screen and (min-width:1200px){}
-#masthead{background-color:rgba(35,31,32,0.7);overflow:hidden;border-bottom:4px solid #231f20;margin:0 0 40px 0}
+.footerlogo{width:60px;margin:10px auto}
+.footerlogo img{width:100%}
+@media screen and (min-width:600px){.footerlogo{float:left;margin:0 15px 15px}
+}#masthead{background-color:rgba(35,31,32,0.7);overflow:hidden;border-bottom:4px solid #231f20;margin:0 0 40px 0}
 section.header-right{width:100%;text-align:center}
 @media screen and (min-width:600px){section.header-right{width:auto;float:right;margin-top:-90px}
 }@media screen and (min-width:700px){section.header-right{margin:0}
 }section.header-right .contact{color:#fff;width:100%;font-family:"Ek Mukta",sans-serif}
 @media screen and (min-width:600px){section.header-right .contact{width:auto;display:inline-block;float:right}
 }section.header-right .contact a{color:#fff}
-section.header-right .tagline{color:#70707b;width:100%;clear:both}
+section.header-right .tagline{color:#b4b4b8;width:100%;clear:both}
 @media screen and (min-width:600px){section.header-right .tagline{width:100%;display:inline-block;float:right;text-align:right}
 }#page{background-color:rgba(35,31,32,0.7);overflow:hidden}
 .social-links{width:auto;display:inline-block}
@@ -1448,9 +1451,10 @@ section.header-right .tagline{color:#70707b;width:100%;clear:both}
 .social-links a{color:#fff}
 .site-footer{width:100%;clear:both;background-color:#3a3b40;color:#fff;overflow:hidden;margin:20px 0 0 0;padding:30px 0 30px 0;font-family:"Ek Mukta",sans-serif;font-size:14px}
 .site-footer h3{width:auto;display:inline-block;border-bottom:1px solid #93b832;margin:0}
-.site-footer .footer-left{width:auto;display:inline-block;float:left}
-.site-footer .footer-right{width:auto;display:inline-block;float:left}
-@media screen and (min-width:600px){.site-footer .footer-right{float:right}
+.site-footer .footer-left{width:100%;display:inline-block}
+@media screen and (min-width:600px){.site-footer .footer-left{float:left;width:auto}
+}.site-footer .footer-right{width:100%;display:inline-block;float:left}
+@media screen and (min-width:600px){.site-footer .footer-right{float:right;width:auto}
 }.page-container{width:100%;padding:20px 5%;background-color:#fff;overflow:hidden;border-top:5px solid #93b832}
 @media screen and (min-width:1200px){.page-container{min-height:550px;padding:40px}
 }.sticky{display:block}
