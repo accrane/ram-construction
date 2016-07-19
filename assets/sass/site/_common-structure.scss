@@ -175,7 +175,7 @@ section.header-right {
 		margin-top: -90px;
 	}
 	@media screen and (min-width: $largetabwidth) {
-		margin: 0;
+		margin: 20px 0 0 0;
 	}
 	.contact {
 		color: #fff;
@@ -196,6 +196,7 @@ section.header-right {
 		color: $color-lighter-grey;
 		width: 100%;
 		clear: both;
+		font-family:$font__heading;
 
 		@media screen and (min-width: $tabwidth) {
 			width: 100%;
