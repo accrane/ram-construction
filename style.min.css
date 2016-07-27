@@ -1439,7 +1439,7 @@ section.header-right{width:100%;text-align:center}
 }section.header-right .contact{color:#fff;width:100%;font-family:"Ek Mukta",sans-serif}
 @media screen and (min-width:600px){section.header-right .contact{width:auto;display:inline-block;float:right}
 }section.header-right .contact a{color:#fff}
-section.header-right .tagline{color:#efefef;width:100%;clear:both;font-family:"Ek Mukta",sans-serif}
+section.header-right .tagline{color:#93b832;width:100%;clear:both;font-family:"Ek Mukta",sans-serif}
 @media screen and (min-width:600px){section.header-right .tagline{width:100%;display:inline-block;float:right;text-align:right}
 }#page{background-color:rgba(35,31,32,0.7);overflow:hidden}
 .social-links{width:auto;display:inline-block}
