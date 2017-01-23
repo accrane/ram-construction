@@ -23,6 +23,7 @@ wp_head();
 
 
 $facebook = get_field('facebook_link', 'option');
+$instagram = get_field('instagram_link', 'option');
 $houzz = get_field('houzz_link', 'option');
 $phone = get_field('phone', 'option');
 
@@ -61,6 +62,11 @@ $phone = get_field('phone', 'option');
 					<li>
 						<i class="fa fa-facebook fa-2x " aria-hidden="true">
 							<a target="_blank" href="<?php echo $facebook; ?>">facebook</a>
+						</i>
+					</li>
+					<li>
+						<i class="fa fa-instagram fa-2x " aria-hidden="true">
+							<a target="_blank" href="<?php echo $instagram; ?>">instagram</a>
 						</i>
 					</li>
 					<li>
